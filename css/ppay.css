@@ -1,0 +1,254 @@
+/*支付*/
+.y-container{
+	width: 1200px;
+	margin: 10px auto 0;
+	background-color: #fff;
+}
+.y-pay-head{
+	padding: 15px 20px;
+	border-bottom:2px solid #a4a4a4;
+}
+.y-pay-head>p{
+	line-height: 30px;
+}
+.y-countdown{
+	color:#ff4466;
+}
+.y-payment{
+	padding: 25px 20px;
+}
+.y-chose{
+	margin-top: 10px;
+}
+.y-pay{
+	padding:20px;
+}
+.y-wechat{
+	border:1px solid #999999;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+.y-pic{
+	width: 41px;
+	height: 41px;
+	float: left;
+}
+.y-wechat-name{
+	float: left;
+	margin-left: 20px;
+	margin-top: 7px;
+}
+.y-money{
+	float: right;
+	margin-top: 7px;
+}
+.y-paynone{
+	border:1px solid #999999;
+	border-top:none;
+	display: none;
+}
+.y-code{
+	width: 170px;
+	height: 170px;
+	float: left;
+	margin:50px 200px;
+}
+.y-code>img{
+	width: 170px;
+	height: 170px;
+}
+.y-clear{
+	font-weight: bold;
+	font-size:32px;
+	margin-top: 100px;
+	float: left;
+}
+.y-pic1{
+	position: relative;
+	top:3px;
+}
+.y-pic2{
+	position: relative;
+	top:6px;
+}
+.y-paynone1{
+	padding: 50px 30px;
+}
+.y-paynone1>div{
+	width: 130px;
+	height: 40px;
+	float: left;
+	border:1px solid #999;
+	margin-right: 20px;
+	text-align: center;
+}
+.y-btn{
+	display: inline-block;
+	background-color: #f13e3a;
+	border:1px solid #f13e3a;
+	color:#fff;
+	padding: 8px 15px;
+	border-radius: 3px;
+	font-size:18px;
+	float: right;
+	margin: 20px;
+	cursor: pointer;
+}
+.y-pay-content1{
+	display: none;
+}
+/*购物车*/
+.y-container1{
+	background-color: #f4f4f4;
+}
+.y-shop-head{
+	padding:20px 0px;
+}
+.y-shop-head>div{
+	float: left;
+	font-size:16px;
+	cursor: pointer;
+}
+.y-shop1{
+	background-color: #333;
+	color:#fff;
+	border-radius:3px;
+	padding: 2px 3px;
+}
+.y-line{
+	display: inline-block;
+	float: left;
+	line-height: 23px;
+	margin: 0px 10px;
+	color:#a4a4a4;
+}
+.y-goods{
+	background-color: #fff;
+}
+.y-goods-nav{
+	padding: 10px 5px;
+	border-bottom:1px solid #999999;
+	margin: 15px 10px;
+}
+.y-goods-nav>div{
+	float: left;
+	font-size:14px;
+}
+.y-allchose{
+	position: relative;
+	top:-3px;
+	margin-right: 200px;
+}
+.y-goods-store{
+	margin-top: 20px;
+	border-bottom: 1px solid #999;
+	padding-bottom: 10px;
+	margin: 15px 10px;
+	padding: 10px 5px;
+}
+.y-store-l{
+	float: left;
+}
+.y-store-l>span{
+	font-size:15px;
+}
+.y-store-l>a{
+	color:#000;
+}
+.y-store-r{
+	float: right;
+	margin-right: 20px;
+}
+.y-store-r>span{
+	color:#ff4466;
+}
+.y-store-r>a{
+	display: inline-block;
+	border:1px solid #000;
+	padding: 2px 5px;
+	color:#000;
+}
+.y-goods-content{
+	padding: 10px 5px;
+	margin: 15px 10px;
+	border-bottom: 1px solid #999;
+}
+.y-goods-content>div{
+	float: left;
+}
+/*加减数量*/
+.y-add>div{
+	float: left;	
+	cursor: pointer;
+}
+.y-div1,.y-div3{
+	padding: 5px;
+	border:1px solid #999;
+	-ms-user-slect:none;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+}
+.y-div2{
+	padding: 5px 10px;
+	border:1px solid #999;
+	border-right: none;
+	border-left: none;
+}
+.y-paymoney{
+	border-top: 1px solid #999;
+}
+.y-paymoney-l{
+	margin:16px 15px;
+	display: inline-block;
+}
+.y-paymoney-l>a{
+	color:#000;
+	display: inline-block;
+	margin:0px 10px;
+}
+.y-paymoney-r{
+	float: right;
+}
+.y-paymoney-r>div{
+	float: left;
+}
+.y-paymoney-r1{
+
+}
+.y-paymoney-r1>span{
+	display: inline-block;
+	margin-top: 16px;
+}
+.y-big{
+	font-size:25px;
+	font-weight: bold;
+	color:#f13e3a;
+	display: inline-block;
+	margin-top: 8px;
+}
+.y-gopay button{
+	cursor:pointer;
+	border:none;
+	background-color: #d8d8d8;
+	color:#fff;
+	padding: 15px 25px;
+	margin-left: 10px;
+	font-size:16px;
+}
+.ynum{
+	display: inline-block;
+}
+/*购物车页脚*/
+.y-footer{
+	margin-top: 50px;
+	text-align: center;
+}
+.y-footer-herf{
+	text-align: center;
+	color:#807f7d;
+	margin-bottom: 20px;
+}
+.y-footer-herf>p>a{
+	color:#807f7d;
+}

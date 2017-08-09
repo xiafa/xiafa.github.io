@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/insure.css">
+    <link rel="stylesheet" href="css/same.css">
+</head>
+<body class="insure pay2">
+<header class="header">
+    <div class="container">
+        <div class="hd-middle r">
+            <dl class="hd-top">
+                <dt>
+                    <a href="">登录</a>
+                </dt>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <a href="">注册</a>
+                </dt>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <img src="img/xing.png">
+                    <a href="">我的收藏</a>
+                </dt>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <img src="img/che.png">
+                    <a href="">我的购物车</a>
+                </dt>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <img src="img/ye.png">
+                    <a href="">我的订单</a>
+                </dt>
+                <dd>
+                    <ul>
+                        <li><a href="">历史订单</a></li>
+                        <li><a href="">当前订单</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <a href="">帮助中心</a>
+                </dt>
+                <dd>
+                    <ul>
+                        <li><a href="">卖家服务</a></li>
+                        <li><a href="">规则中心</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</header>
+<div class="gwc-out fix">
+    <div class="gwc-line fix">
+        <img src="img/gwc.png" class="l">
+        <div class="gwc-round r">
+            <span class="gwc-span1"></span>
+            <span class="gwc-span2"></span>
+            <span class="gwc-span3"></span>
+            <span class="gwc-span4"></span>
+            <span class="gwc-span5"></span>
+            <span class="gwc-span6"></span>
+            <span class="gwc-span7"></span>
+            <span class="gwc-span8"></span>
+            <span class="gwc-span9"></span>
+            <span class="gwc-span10"></span>
+        </div>
+        <ul>
+            <li class="gwc-li1">购物车</li>
+            <li class="gwc-li2">确认订单</li>
+            <li class="gwc-li3">支付</li>
+            <li class="gwc-li4">完成</li>
+        </ul>
+    </div>
+
+</div>
+<div class="ord ord-insure">
+    <div class="ord-wrap auto">
+        <div class="ord-adress">
+            <h4 class="f14">选择收货地址</h4>
+            <div class="adrs-main">
+                <div class="ord-adress1 adrs-1">
+                    <p class="adrs-name">姓名</p>
+                    <p class="adrs-adrs">详细地址</p>
+                    <p class="adrs-yb">邮编</p>
+                    <p class="adrs-phone">联系方式</p>
+                </div>
+            </div>
+            <a class="ord-gl" href="address.html">
+                管理收货地址
+            </a>
+            <span class="adrs-add poi">使用新地址</span>
+        </div>
+        <ul class="ord-insure">
+            <h4 class="f14">确认商品信息</h4>
+            <li>
+                <div class="tc">商品信息</div>
+                <div class="tc ord-w161">商品</div>
+                <div class="ord-w100 tr">单价（元）</div>
+                <div class="tc ord-w161">数量</div>
+                <div class="tc ord-w92">优惠</div>
+                <div class="tr ord-w125 r">小计（元）</div>
+            </li>
+            <li>
+                <div class="ord-dianpu">
+                    <span>店铺：</span>
+                    <span>美丽优选</span>
+                    <a href="">联系客服</a>
+                </div>
+            </li>
+            <li class="f14">
+                <div>
+                    <img class="ord-val" src="img/odcloth.png" alt="">
+                    <span>2017春季新品几何刺绣花朵韩版百搭中长款宽松牛仔外套</span>
+                </div>
+                <div class="tc ord-w161 ord-val">
+                    <p>颜色：黑色</p>
+                    <p>尺寸：M</p>
+                </div>
+                <div class="ord-w100 tr">106.25</div>
+                <div class="tc ord-w161">1</div>
+                <div class="tr ord-w125 r">106.25</div>
+            </li>
+            <li>
+                <div>
+                    <span>备注：</span>
+                    <input type="text"placeholder="补充添加备注信息">
+                </div>
+                <div class="tr ord-w161">
+                    快递公司：
+                    <select name="" id="">
+                        <option value="">全国包邮</option>
+                    </select>
+                </div>
+                <div class="ord-w125 r tr">快递运费：<span>￥：00</span></div>
+            </li>
+            <li class="fix">
+                <a href="">返回购物车</a>
+                <div class="r">
+                    共有 <span>1</span>件商品，总计：<span class="ord-almoney b">￥106.25</span>
+                    <a class="ord-paid" href="pay.html">确认并付款</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="adrs-newinfo abs">
+    <p class="f16">
+        添加收货地址
+        <span class="adrs-close r poi f24">×</span>
+    </p>
+    <form action="">
+        <div>
+            <span><span>* </span> 收货人：</span>
+            <input class="adrs-user" type="text">
+            <span class="adrs-nameerror adrs-error"></span>
+        </div>
+        <div>
+            <span><span>* </span>所在地区：</span>
+            <select id="adrs-province">
+                <option value="">--请选择--</option>
+            </select>
+            <select name="" id="adrs-citys">
+                <option value="">--请选择--</option>
+            </select>
+            <select name="" id="adrs-area">
+                <option value="">--请选择--</option>
+            </select>
+            <span class="adrs-error adrs-ldzerror"></span>
+        </div>
+        <div>
+            <span><span>* </span>详细地址：</span><input class="adrs-dtdz" type="text">
+            <span class="adrs-error adrs-dzerror"></span>
+        </div>
+        <div>
+            <span><span>* </span>手机号码：</span>
+            <input class="adrs-iph" type="text">
+            <span>固定电话：</span><input type="text">
+            <span class="adrs-error adrs-iperror"></span>
+        </div>
+        <div>
+            <span>邮编：</span><input class="adrs-eml" type="text">
+            <span class="adrs-error adrs-emlerror"></span>
+            <br>
+            <p class="adrs-tips">用来接收订单提醒邮件，便于您及时了解订单状态</p>
+        </div>
+        <div class="adrs-save tc poi insure-save">保存收货人信息</div>
+    </form>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script  src="js/citys.js"></script>
+<script src="js/insure.js"></script>
+<script src="js/same.js"></script>
+</html>

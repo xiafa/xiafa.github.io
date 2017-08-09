@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地址管理</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/insure.css">
+    <link rel="stylesheet" href="css/same.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="hd-middle r">
+            <dl class="hd-top">
+                <dt>
+                    <a href="">登录</a>
+                </dt>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <a href="">注册</a>
+                </dt>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <img src="img/xing.png">
+                    <a href="">我的收藏</a>
+                </dt>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <img src="img/che.png">
+                    <a href="">我的购物车</a>
+                </dt>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <img src="img/ye.png">
+                    <a href="">我的订单</a>
+                </dt>
+                <dd>
+                    <ul>
+                        <li><a href="">历史订单</a></li>
+                        <li><a href="">当前订单</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="hd-top">
+                <dt>
+                    <a href="">帮助中心</a>
+                </dt>
+                <dd>
+                    <ul>
+                        <li><a href="">卖家服务</a></li>
+                        <li><a href="">规则中心</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</header>
+<div class="adrs-top"><h1 class="adrs-warp"><a href="index.html"><img src="img/list_logo.gif" alt=""></a></h1></div>
+<div class="adrs auto rel adrs-main">
+    <h4 class="f16">地址管理</h4>
+    <span class="adrs-add f16">+ 地址管理</span>
+    <div class="adrs-ad adrs-1">
+        <span class="adrs-name" class="tc">张三</span>
+        <span class="adrs-adrs">浙江省杭州市拱墅区乐富智汇园</span>
+        <span class="adrs-yb">11111111</span>
+        <span class="adrs-phone">13934510081</span>
+        <span class="adrs-sure1">默认</span>
+        <span class="adrs-first adrs-clgray">设为默认</span>
+        <span class="adrs-adit adrs-clgray">编辑</span>
+        <span class="adrs-dl adrs-clgray">删除</span>
+    </div>
+
+</div>
+<div class="adrs-newinfo abs">
+    <p class="f16">
+        添加收货地址
+        <span class="adrs-close r poi f24">×</span>
+    </p>
+    <form action="">
+        <div>
+            <span><span>* </span> 收货人：</span>
+            <input class="adrs-user" type="text">
+            <span class="adrs-nameerror adrs-error"></span>
+        </div>
+        <div>
+            <span><span>* </span>所在地区：</span>
+            <select id="adrs-province">
+                <option value="">--请选择--</option>
+            </select>
+            <select name="" id="adrs-citys">
+                <option value="">--请选择--</option>
+            </select>
+            <select name="" id="adrs-area">
+                <option value="">--请选择--</option>
+            </select>
+            <span class="adrs-error adrs-ldzerror"></span>
+        </div>
+        <div>
+            <span><span>* </span>详细地址：</span><input class="adrs-dtdz" type="text">
+            <span class="adrs-error adrs-dzerror"></span>
+        </div>
+        <div>
+            <span><span>* </span>手机号码：</span>
+            <input class="adrs-iph" type="text">
+            <span>固定电话：</span><input type="text">
+            <span class="adrs-error adrs-iperror"></span>
+        </div>
+        <div>
+            <span>邮编：</span><input class="adrs-eml" type="text">
+            <span class="adrs-error adrs-emlerror"></span>
+            <br>
+            <p class="adrs-tips">用来接收订单提醒邮件，便于您及时了解订单状态</p>
+        </div>
+        <div class="adrs-save tc poi insure-save">保存收货人信息</div>
+        <div class="adit-save tc poi insure-save dn">保存收货人信息</div>
+
+
+    </form>
+</div>
+<div class="foot login-footer bgf2">
+    <div>
+        <ul class="ft-end">
+            <h3>买家帮助</h3>
+            <li><a href="">新手指南</a></li>
+            <li><a href="">服务保障</a></li>
+            <li><a href="">常见问题</a></li>
+            <li><a href="">风险监测</a></li>
+        </ul>
+        <ul class="ft-end">
+            <h3>商家帮助</h3>
+            <li><a href="">商家入驻</a></li>
+            <li><a href="">商家后台</a></li>
+        </ul>
+        <ul class="ft-end">
+            <h3>关于我们</h3>
+            <li><a href="">关于牡丹街</a></li>
+            <li><a href="">联系我们</a></li>
+        </ul>
+        <ul class="ft-end">
+            <h3>关注我们</h3>
+            <li>
+                <img src="img/weibo.png">
+                <a href="">新浪微博</a>
+            </li>
+            <li>
+                <img src="img/kongjian.png">
+                <a href="">QQ空间</a>
+            </li>
+            <li>
+                <img src="img/tengxun.png">
+                <a href="">腾讯微博</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ft-finall">
+        <p>copyright&copy2017 Meilishuo.com 电信与信息服务业务经营许可证 100798号 经营性网站备案信息</p>
+        <p style="margin-top: 3px;">京ICP备11031139号 京公网安备110108006045 客服电话：4000-800-577 文明办网文明上网举报电话：010-82615762 违法不良信息举报中心</p>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script  src="js/citys.js"></script>
+<script src="js/insure.js"></script>
+</body>
+</html>

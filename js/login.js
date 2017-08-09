@@ -1,18 +1,64 @@
-window.onload=function(){
-   //QQ登录
-   $(".middle_right_down ul li").click(function(){
-        if($(this).html=="QQ登录"){
-        	var url='https://graph.qq.com/oauth/show?which=Login&display=pc&scope=all&display=pc&response_type=code&redirect_uri=http%3A%2F%2Fwww.meilishuo.com%2Fuser%2Fthirdtransfer%3Fthird%3Dqq%26platform%3Dpc%26operScene%3Dlogin&state=TASyfbkq7hyx9oh&client_id=210915&ptp=1.aen5Pb.0.0.SUU6e';
-        	location.href=url;
-        }else if($(this).val=="微博注册"){
-        	window.open('../8pay/pay.html');
-        }else{
-            window.open('../7detail/detail.html');
-        }	
-   });
-   $(".middle_right_down ul li").hover(function(){
-    	$(this).css('cursor','pointer');
-   });
-   //微博登录
-   //微信登录
-}
+$(function(){
+	var CookieUtil = {
+    get: function (name){
+        var cookieName = encodeURIComponent(name) + "=",
+            cookieStart = document.cookie.indexOf(cookieName),
+            cookieValue = null;
+        if (cookieStart > -1){
+            var cookieEnd = document.cookie.indexOf(";", cookieStart);
+            if (cookieEnd == -1){
+                cookieEnd = document.cookie.length;
+            }
+            cookieValue = decodeURIComponent(document.cookie.substring(cookieStart
+                + cookieName.length, cookieEnd));
+        }
+        return cookieValue;
+    },
+    set: function (name, value, expires, path, domain, secure) {
+        var cookieText = encodeURIComponent(name) + "=" +
+            encodeURIComponent(value);
+        if (expires instanceof Date) {
+            cookieText += "; expires=" + expires.toGMTString();
+        }
+        if (path) {
+            cookieText += "; path=" + path;
+        }
+        if (domain) {
+            cookieText += "; domain=" + domain;
+        }
+        if (secure) {
+            cookieText += "; secure";
+        }
+        document.cookie = cookieText;
+    },
+    unset: function (name, path, domain, secure){
+        this.set(name, "", new Date(0), path, domain, secure);
+    }
+};
+	var s=new Date("May 25,2017");
+    if(CookieUtil.get("remember")=="true"){
+   	$("#user").val(CookieUtil.get("user"));
+	$("#psw").val(CookieUtil.get("psw"));
+	$("#remember").attr("checked","checked")
+   }	
+   else{
+   	$("#user").val("");
+   	$("#psw").val("");
+   	$("#remember").attr("checked",false)
+   }
+
+  $("#remember").change(function(){ 
+	if($("#remember").is(":checked")){
+		var user=$("#user").val();
+		var psw=$("#psw").val();
+		CookieUtil.set("user",user,s);
+		CookieUtil.set("psw",psw,s);
+		CookieUtil.set("remember","true",s);
+	}
+	else{
+	    CookieUtil.set("remember","false",s);
+	CookieUtil.unset("user");
+	CookieUtil.unset("psw");
+	}
+    })
+})
